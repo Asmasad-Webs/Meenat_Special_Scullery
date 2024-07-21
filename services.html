@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color:lightblue;
+            margin: 0;
+            font-family: 'Trebuchet MS';
+        }
+
+        .welcome {
+            background-color: white;
+            
+            color:blue;
+        }
+
+        .welcome {
+            font-size:15px;
+        }
+
+        .head {
+            background-image: linear-gradient(orange, blue);
+            padding-bottom: 30px;
+            border-radius:0px 0px 20px 20px;
+            position: -webkit-sticky; /* Safari & IE */
+            position: sticky;
+            top: 0;
+        }
+
+        .head h3 {
+            background-color: white;
+            padding: 7px;
+            border-radius: 50px;
+            width: 150px;
+            color:darkblue;
+            font-size: 20px;
+        }
+
+        center img {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color:white;
+            background-color: transparent;
+            border: 1px groove white;
+            padding: 7px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        ._1, ._2, ._3 {
+            width: 100px;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 3px 3px 5px black;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .content img {
+            border: 2px solid darkblue;
+        }
+
+        .content a {
+            text-decoration: none;
+            color:darkblue;
+            font-weight: bold;
+            /* background-color: lime; */
+            padding: 3px;
+            border-radius: 20px;
+            /* margin-top: 100px; */
+        }
+
+    </style>
+    <style>
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 68%;
+          top: 50%;
+          z-index: 1;
+          width: 30px;
+          height: 30px;
+          margin: -76px 0 0 -76px;
+          border: 10px solid blue;
+          border-radius: 50%;
+          border-top: 10px solid orange;
+          border-bottom: 10px solid orange;
+          -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+        }
+
+        @media only screen and (min-width: 400px) {
+                #loader {
+                    left: 54%;
+                    top: 50%;
+                }
+            }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+        </style>
+    <title>Services</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div class="animate-bottom" style="display: none;" id="myDiv">
+        <div class="welcome">
+            <center>
+                Meenat Services
+            </center>
+        </div>
+        <div class="head">
+            <center>
+                <img src="a.jpg" alt="" height="110px" width="110px" style="border-radius:100px;">
+                <h3 style="margin-top: 5px;">
+                  Our Services
+                </h3>
+                <p style="margin-top: -16px; color:white; font-size:14px">
+                    Best Test and Fast Delivery
+                </p><br>
+    
+                <div class="nav" style="display: flex; justify-content:space-around">
+                    <div class="home">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </div>
+                    <div class="about">
+                        <a href="about.html">
+                            About
+                        </a>
+                    </div>
+                    <div class="services">
+                        <a href="#" style="background-color: white; color:blue;">
+                            Services
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+    
+            </center>
+        </div>
+
+        <br><br>
+        <div class="content" style="display: flex; justify-content:space-around; margin-top:-10px;">
+            <div class="1" style="border:2px solid blue; padding:5px; border-radius: 20px; background-color:rgb(250, 237, 214)">
+                <img src="awara.jpg" alt="" height="100px" width="150px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px; text-align: left; margin-top:7px">
+                    <b>Item:</b> Awara (Pack)<br>
+                    <b>Price:</b> N500/Pack<br>
+                    <b>Delivery:</b> N300
+                </p>
+            </div>
+            <div class="2" style="border:2px solid blue; padding:5px; border-radius: 20px; background-color:rgb(250, 237, 214)">
+                <img src="zobo.jpg" alt="" height="100px" width="150px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px; text-align: left; margin-top:7px">
+                    <b>Item:</b> Zobo (Bottle)<br>
+                    <b>Price:</b> N150/200<br>
+                    <b>Delivery:</b> N300
+                </p>
+            </div>
+            
+        </div><br>
+    
+        <div class="content" style="display: flex; justify-content:space-around; margin-top:-10px">
+            <div class="1" style="border:2px solid blue; padding:5px; border-radius: 20px; background-color:rgb(250, 237, 214)">
+                <img src="ginger.jpg" alt="" height="100px" width="150px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px; margin-top:7px">
+                    <b>Item:</b> Ginger (Bottle)<br>
+                    <b>Price:</b> N150/300<br>
+                    <b>Delivery:</b> N300
+                </p>
+            </div>
+            <div class="2" style="border:2px solid blue; padding:5px; border-radius: 20px; background-color:rgb(250, 237, 214)">
+                <img src="masa.jpg" alt="" height="100px" width="150px" style="border-radius:20px;
+                border: 2px solid blue; ">
+                <p style="margin-top: -10px; margin-top:7px">
+                    <b>Item:</b> Masa (Pack)<br>
+                    <b>Price:</b> N1000/Pack<br>
+                    <b>Delivery:</b> N300
+                </p>
+            </div>
+        </div>
+    
+        <center>
+            <a href="#" style="text-decoration:none;">
+            <p style="color:white; background-color: blue;
+            padding: 7px; border-radius: 10px; width: 200px;">
+                Make Order
+            </p>
+        </a>
+        </center>
+    </div>
+
+
+
+    </div>
+
+        
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 1500);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+    
+
+</body>
+</html>
